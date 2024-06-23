@@ -12,10 +12,10 @@ import { TrackerModule } from "tracker/tracker.module";
   imports: [
     TypeOrmModule.forRoot({
       type: "mysql",
-      host: "tracker-mysqldb",
+      host: "database-1.ctkiiqee25a3.us-east-1.rds.amazonaws.com",
       port: 3306,
       username: "root",
-      password: "root",
+      password: "abc$123456",
       database: "tracker-db",
       entities: [TrackerEntity],
       synchronize: true,
